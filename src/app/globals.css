@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 206, 206, 206;
+  --background-end-rgb: 206, 206, 206;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 26, 26, 26;
+    --background-end-rgb: 26, 26, 26;
+    color-scheme: dark;
+  }
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../../fonts/Montserrat-LightItalic.ttf');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../../fonts/Montserrat-ThinItalic.ttf');
+    font-weight: thin;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Titillium Web';
+    src: url('../../fonts/Titillium_Web/TitilliumWeb-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+p {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
