@@ -1,6 +1,7 @@
 import '@/../styles/home.css';
 import '@/../styles/page.css';
 import Link from "next/link";
+import Ai_Output from './components/ai_output';'@/componentes/ai_output.tsx';
 
 export default function Home() {
   return (
@@ -25,14 +26,27 @@ export default function Home() {
                 </div>
                 <div className='
                     ml-16 
+                    mb-8 
                     bg-sky-800 
                     rounded-bl-2xl
                     rounded-tl-2xl 
                     rounded-tr-2xl 
                     rounded-br
                     text-white
-                    p-4 '>
+                    p-3 '>
                     <p>For any enquiries, send me an <Link href="">e-mail</Link>, or message me on <Link href="">Whatsapp</Link>/<Link href="http://signal.org/install">Signal</Link>.</p>
+                </div>
+                <div className='
+                    mb-8 
+                    mr-16 
+                    bg-gray-700 
+                    rounded 
+                    rounded-tl-2xl 
+                    rounded-tr-2xl 
+                    rounded-br-2xl 
+                    text-white
+                    p-3'>
+                    <Ai_Output />
                 </div>
             </div>
         </div>
