@@ -16,13 +16,12 @@ export default function ProjectCard({ project }: { project: Project }) {
         <h1 className="title">{project.title}</h1>
         <p>{project.description}</p>
       </div>
-      {project.imageUrl || project.imageAlt ?
+      {project.imageUrl ?
         <div className="flex-col">
           <Image
             className="rounded-3xl"
             src={project.imageUrl}
             alt={project.imageAlt}
-            placeholder="blur"
           />
         </div>
         :
