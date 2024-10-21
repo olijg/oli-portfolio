@@ -1,6 +1,5 @@
 import '@/../styles/home.css';
 import '@/../styles/page.css';
-import Link from "next/link";
 
 export default function Home() {
   return (
@@ -20,7 +19,7 @@ export default function Home() {
                     rounded-br-2xl 
                     text-white
                     p-3'>
-            <p>Oli is a web developer with 2 years of experience working in the Energy and Network industries.</p>
+            <p>Oli is a web developer with over 2 years of experience working in the Energy and Network industries.</p>
             <p>He takes care to design and build  responsive and accessible web pages and applications. 🤓</p>
           </div>
           <div className='
@@ -31,8 +30,9 @@ export default function Home() {
                     rounded-tr-2xl 
                     rounded-br
                     text-white
+                    message
                     p-4 '>
-            <p>For any enquiries, send me an <Link href="mailto:ogreen98@pm.me">e-mail</Link>, or message me on <Link href="">Whatsapp</Link>/<Link href="http://signal.org/install">Signal</Link>.</p>
+            <p>For any enquiries, send me an <a href="mailto:ogreen98@pm.me">e-mail</a>, or message me on <a href="tel:+447983112377">SMS/Signal/WhatsApp</a>.</p>
           </div>
         </div>
       </div>
